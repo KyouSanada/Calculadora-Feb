@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body{
-    background: #f6f5f7; 
+    background: #EDE0D4; 
     font-family: 'Montserrat', sans-serif;
     color: #3E363F; 
 }
 
-#pagina{
+#contenedor{
     width: 900px;
     height: 400px;
     text-align: center;
@@ -14,10 +14,11 @@ body{
     inset: 0;    /* se puede usar en lugar de escribir top: 0 left: 0 right: 0 bottom: 0*/
     margin: auto;
     border-radius: 10px;
+    border-block-end-style: solid;
+    border-right-style: solid;
     overflow: hidden; 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
-
 }
 
 #calculadora{
@@ -27,12 +28,18 @@ body{
     float: left;
 }
 
-#explicacion{
-    background: #FF416C;
+#detalle{
+    background: #9C6644;
     width: 50%;
     height: 100%;
     float: left;
     color: #f6f5f7;
+    
+}
+#lista{
+    font-size: larger;
+    text-align: left;
+
 }
 .contenido{
     position: relative;
@@ -52,19 +59,24 @@ button {
       font-weight: bold;
       padding: 12px 45px;
       border-radius: 30px;
-      background-color: #FF416C;
-      border: 1px solid #FF416C;
+      background-color: #9C6644;
+      border: 0 solid #FFBD8E;
       color: #FFFFFF;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: transform 20ms ease-in;
       cursor: pointer;
+      box-shadow: 0 5px #999;
       margin-top: 16px;
     
     
 }
+button:hover {background-color: #7F5539}
+
 button:active {
-	transform: scale(0.95);
+  background-color: #7F5539;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #sobrecaja{
     font-size: small;
